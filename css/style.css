@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.tabuleiro {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+
+.block {
+    width: 20%;
+    height: 100%;
+}
+
+#black {
+    background-color: black;
+}
+
+img {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    animation: cavalo 10s infinite;
+    z-index: 2;
+}
+
+@keyframes cavalo {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    6% {
+        top: 180px;
+        left: 0px;
+    }
+    12% {
+        top: 180px;
+        left: 90px;
+    }
+    18% {
+        top: 350px;
+        left: 90px;
+    }
+    24% {
+        top: 350px;
+        left: 170px;
+    }
+    30% {
+        top: 520px;
+        left: 170px;
+    }
+    36% {
+        top: 520px;
+        left: 260px;
+    }
+    42% {
+        top: 520px;
+        left: 440px;
+    }
+    48% {
+        top: 600px;
+        left: 440px;
+    }
+    54% {
+        top: 520px;
+        left: 440px;
+    }
+    60% {
+        top: 520px;
+        left: 260px;
+    }
+    66% {
+        top: 520px;
+        left: 170px;
+    }
+    72% {
+        top: 350px;
+        left: 170px;
+    }
+    78% {
+        top: 350px;
+        left: 90px;
+    }
+    82% {
+        top: 180px;
+        left: 90px;
+    }
+    88% {
+        top: 180px;
+        left: 0px;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+}
